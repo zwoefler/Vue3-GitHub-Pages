@@ -2,7 +2,7 @@ name: Deploy static content to Pages
 
 on:
   push:
-    branches: ['gh-pages']
+    branches: ['main']
 
   workflow_dispatch:
 
@@ -15,9 +15,6 @@ concurrency:
   group: 'pages'
   cancel-in-progress: true
 
-defaults:
-  run:
-    working-directory: dev/
 
 jobs:
   deploy:
@@ -25,6 +22,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: dev/
     steps:
       - name: Checkout
         uses: actions/checkout@v4
