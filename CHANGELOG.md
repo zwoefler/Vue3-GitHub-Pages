@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## [1.1.1] - Tue. 16.07.2024
+
+GitHub pages uses Vue-Router to redirect correctly
+
+### ADDED
+- GitHub Action copies index.html after build step into 404.html
+
+### IMPROVE
+- Unknown routes are now routed by Vue-Router, not GitHub Pages
+
+
 ## [1.1.0] - Tue. 16.07.2024
 
 Add Docs to setup GitHub Pages via GitHub Actions
