@@ -6,7 +6,8 @@ Deploy Vue3 App to GitHub pages.
 - [ ] npm checkout "uses:" stuff doesN#t work with "working dir". mabe set package-lock.json path by hand
 - [ ] Want Vue Project in different folder (dev/)
 - [ ] Automatic releases
-
+- [X] Use GitHub Actions Secrets
+  - [X] Docs how to set it up
 
 ## Setup GitHub Action for Deployment to GitHub Pages
 #### Step 1: Activate GitHub Pages
